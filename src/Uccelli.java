@@ -5,8 +5,10 @@ public abstract class Uccelli extends Animale {
 		super(vel, f, vit, ene, att, dif, da, alt, lung, larg, pe);
 		
 	}
-	public void attacco(Animale atk ) {
+	public void attaccoSpeciale( ) {
+		Animale att;
 		
 	}
+	
 	
 }

@@ -118,7 +118,7 @@ public class Animale {
 	public void attacco() {
 		
 	}
-	public void attaccoSpeciale() {
+	public void attaccoSpeciale( ) {
 		
 	}
 }
