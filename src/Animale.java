@@ -1,6 +1,6 @@
 
 public class Animale {
-	private int velocità;
+	private double velocità;
 	private int forza;
 	private int vita;
 	private int energia;
@@ -12,7 +12,7 @@ public class Animale {
 	private int larghezza;
 	private double peso;
 
-	public Animale(int vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg, double pe) {
+	public Animale(double vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg, double pe) {
 		vel= velocità;
 		f= forza;
 		vit= vita;
@@ -27,7 +27,7 @@ public class Animale {
 		
 	}
 
-	public int getVelocità() {
+	public double getVelocità() {
 		return velocità;
 	}
 

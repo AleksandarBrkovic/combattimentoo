@@ -1,8 +1,8 @@
 
 public class Rapace extends Uccelli {
 
-	public Rapace(int vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg, double pe) {
-		super(vel= 100,
+	public Rapace(double vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg, double pe) {
+		super(vel= 62.5,
 				f= (int) (Math.random()*(20-5+1)+5), 
 				vit= 30, 
 				ene= 100, 
