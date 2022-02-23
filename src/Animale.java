@@ -10,9 +10,9 @@ public class Animale {
 	private int altezza;
 	private int lunghezza;
 	private int larghezza;
-	private int peso;
+	private double peso;
 
-	public Animale(int vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg, int pe) {
+	public Animale(int vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg, double pe) {
 		vel= velocità;
 		f= forza;
 		vit= vita;
@@ -107,7 +107,7 @@ public class Animale {
 		this.larghezza = larghezza;
 	}
 
-	public int getPeso() {
+	public double getPeso() {
 		return peso;
 	}
 
@@ -119,6 +119,9 @@ public class Animale {
 		
 	}
 	public void attaccoSpeciale( ) {
+		
+	}
+	public void abilità() {
 		
 	}
 }
