@@ -14,6 +14,7 @@ public class Leone extends Predatori {
 				lung= 350, 
 				larg= 80, 
 				pe=  (Math.random()*(300-272+1)+272));
+		a
 		// TODO Auto-generated constructor stub
 	}
 
