@@ -1,11 +1,11 @@
 
 public class Serpente extends Anfibi{
 
-	public Serpente(double vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg,
+	public Serpente(double vel, double f, int vit, int ene, double att, double dif, double da, int alt, int lung, int larg,
 			double pe) {
 		super(vel= 13.75,
 				f= 42.1875, 
-				vit= 30, 
+				vit= 100, 
 				ene= 100, 
 				att= 42.1875, 
 				dif= 42.1875, 

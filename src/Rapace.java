@@ -1,10 +1,10 @@
 
 public class Rapace extends Uccelli {
 
-	public Rapace(double vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg, double pe) {
+	public Rapace(double vel, double f, int vit, int ene, double att, double dif, double da, int alt, int lung, int larg, double pe) {
 		super(vel= 62.5,
 				f= 31.64, 
-				vit= 30, 
+				vit= 100, 
 				ene= 100, 
 				att= 31.64, 
 				dif= 100, 

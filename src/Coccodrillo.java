@@ -1,15 +1,15 @@
 
 public class Coccodrillo extends Anfibi {
 
-	public Coccodrillo(double vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg,
+	public Coccodrillo(double vel, double f, int vit, int ene, double att, double dif, double da, int alt, int lung, int larg,
 			double pe) {
 		super(vel= 60,
-				f= 50, 
-				vit= 30, 
+				f= 56.25, 
+				vit= 100, 
 				ene= 100, 
-				att= , 
-				dif= (int) (Math.random()*10), 
-				da= (int) (Math.random()*(30-10+1)+10), 
+				att= 100, 
+				dif= 23.73, 
+				da= 75, 
 				alt= 50,
 				lung= (int) (Math.random()*(500-350+1)+350), 
 				larg=70, 

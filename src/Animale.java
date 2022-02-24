@@ -1,18 +1,18 @@
 
 public class Animale {
-	private double velocità;
-	private int forza;
-	private int vita;
-	private int energia;
-	private int attacco;
-	private int difesa;
-	private int danni;
-	private int altezza;
-	private int lunghezza;
-	private int larghezza;
-	private double peso;
+	protected double velocità;
+	protected double forza;
+	protected int vita;
+	protected int energia;
+	protected double attacco;
+	protected double difesa;
+	protected double danni;
+	protected int altezza;
+	protected int lunghezza;
+	protected int larghezza;
+	protected double peso;
 
-	public Animale(double vel, int f, int vit, int ene, int att, int dif, int da, int alt, int lung, int larg, double pe) {
+	public Animale(double vel, double f, int vit, int ene, double att, double dif, double da, int alt, int lung, int larg, double pe) {
 		vel= velocità;
 		f= forza;
 		vit= vita;
@@ -35,7 +35,7 @@ public class Animale {
 		this.velocità = velocità;
 	}
 
-	public int getForza() {
+	public double getForza() {
 		return forza;
 	}
 
@@ -59,7 +59,7 @@ public class Animale {
 		this.energia = energia;
 	}
 
-	public int getAttacco() {
+	public double getAttacco() {
 		return attacco;
 	}
 
@@ -67,7 +67,7 @@ public class Animale {
 		this.attacco = attacco;
 	}
 
-	public int getDifesa() {
+	public double getDifesa() {
 		return difesa;
 	}
 
@@ -75,7 +75,7 @@ public class Animale {
 		this.difesa = difesa;
 	}
 
-	public int getDanni() {
+	public double getDanni() {
 		return danni;
 	}
 
