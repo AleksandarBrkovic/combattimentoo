@@ -17,5 +17,10 @@ public class Leone extends Predatori {
 		
 		// TODO Auto-generated constructor stub
 	}
+	public void abilità(Animale a2 ) { // agguato
+		
+		this.danni+= 
+		
+	}
 
 }
