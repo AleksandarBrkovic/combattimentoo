@@ -15,5 +15,13 @@ public class Struzzo extends Uccelli {
 				pe= (int) (Math.random()*(160-120+1)+120));
 		// TODO Auto-generated constructor stub
 	}
+	public void TestaSottoLaSabbia() {
+		this.difesa+= (int) (Math.random()*(10-5+1)+5);
+		int prob=0;
+		prob=(int) (Math.random()*1);
+		if(prob==1) {
+			this.energia++;
+		}
+	}
 
 }

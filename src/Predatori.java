@@ -6,5 +6,17 @@ public abstract class Predatori extends Animale {
 		super(vel, f, vit, ene, att, dif, da, alt, lung, larg, pe);
 		// TODO Auto-generated constructor stub
 	}
+	
+	public void attaccoSpeciale(Animale a2 ) { //beccata
+		System.out.println("GRAFFIALO ZIO PORCO SIUM");
+		int x=(int) (Math.random()*(10-5+1)+5);
+		this.danni+= x;
+		
+		
+	}
+	
+	public void abilità(Animale a2 ) {
+		
+	}
 
 }

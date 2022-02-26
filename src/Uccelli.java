@@ -5,10 +5,15 @@ public abstract class Uccelli extends Animale {
 		super(vel, f, vit, ene, att, dif, da, alt, lung, larg, pe);
 		
 	}
-	public void attaccoSpeciale( ) { //beccata
+	public void attaccoSpeciale(Animale a2 ) { //beccata
 		System.out.println("USA BECCATA");
 		int x=(int) (Math.random()*(10-5+1)+5);
 		this.attacco+= x;
+		
+		
+	}
+	
+	public void abilità(Animale a2 ) {
 		
 	}
 	

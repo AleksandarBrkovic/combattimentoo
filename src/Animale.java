@@ -115,13 +115,13 @@ public class Animale {
 		this.peso = peso;
 	}
 	
-	public void attacco() {
+	public void attacco(Animale a2) {
 		
 	}
-	public void attaccoSpeciale( ) {
+	public void attaccoSpeciale(Animale a2)  {
 		
 	}
-	public void abilità() {
+	public void abilità(Animale a2) {
 		
 	}
 }
