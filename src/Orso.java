@@ -15,5 +15,15 @@ public class Orso extends Predatori {
 				pe=  (Math.random()*(550-450+1)+450));
 		// TODO Auto-generated constructor stub
 	}
+	public void pellicciaSpessa() {
+		int x=(int) (Math.random()*(10-5+1)+5);
+		this.difesa+=x;
+		
+	}
+	public void possanza() {
+		int x=(int) (Math.random()*(10-5+1)+5);
+		this.forza+=x;
+		
+	}
 
 }

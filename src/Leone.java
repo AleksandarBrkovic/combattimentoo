@@ -19,8 +19,14 @@ public class Leone extends Predatori {
 	}
 	public void abilità(Animale a2 ) { // agguato
 		
-		this.danni+= 
+		this.danni++;
+		attaccoSpeciale(a2);
+		attaccoSpeciale(a2); 
 		
+	}
+	public void agilità() {
+		int x=(int) (Math.random()*(10-5+1)+5);
+		this.velocità+=x;
 	}
 
 }
