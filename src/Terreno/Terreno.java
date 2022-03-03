@@ -1,3 +1,4 @@
+package Terreno;
 
 public class Terreno {
 	protected String TipoDiTerreno;
@@ -10,6 +11,11 @@ public class Terreno {
 		tdt= TipoDiTerreno;
 	}
 
+	
+	public void bonusTerreno() {
+		
+	}
+	
 	public String getTipoDiTerreno() {
 		return TipoDiTerreno;
 	}
@@ -17,8 +23,4 @@ public class Terreno {
 	public void setTipoDiTerreno(String tipoDiTerreno) {
 		TipoDiTerreno = tipoDiTerreno;
 	}
-	public void bonusTerreno() {
-		
-	}
-	
 }

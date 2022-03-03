@@ -1,6 +1,7 @@
+package Animale;
 
 public class Animale {
-	protected double velocità;
+	private double velocità;
 	protected double forza;
 	protected int vita;
 	protected int energia;
@@ -12,19 +13,21 @@ public class Animale {
 	protected int larghezza;
 	protected double peso;
 
-	public Animale(double vel, double f, int vit, int ene, double att, double dif, double da, int alt, int lung, int larg, double pe) {
-		vel= velocità;
-		f= forza;
-		vit= vita;
-		ene= energia;
-		att= attacco;
-		dif= difesa;
-		da= danni;
-		alt= altezza;
-		lung= lunghezza;
-		larg= larghezza;
-		pe= peso;
-		
+	
+	public Animale(double velocità, double forza, int vita, int energia, double attacco, double difesa, double danni,
+			int altezza, int lunghezza, int larghezza, double peso) {
+		super();
+		this.setVelocità(velocità);
+		this.forza = forza;
+		this.vita = vita;
+		this.energia = energia;
+		this.attacco = attacco;
+		this.difesa = difesa;
+		this.danni = danni;
+		this.altezza = altezza;
+		this.lunghezza = lunghezza;
+		this.larghezza = larghezza;
+		this.peso = peso;
 	}
 
 	public double getVelocità() {
@@ -63,7 +66,7 @@ public class Animale {
 		return attacco;
 	}
 
-	public void setAttacco(int attacco) {
+	public void setAttacco(double attacco) {
 		this.attacco = attacco;
 	}
 
@@ -79,8 +82,8 @@ public class Animale {
 		return danni;
 	}
 
-	public void setDanni(int danni) {
-		this.danni = danni;
+	public void setDanni(double d) {
+		this.danni = d;
 	}
 
 	public int getAltezza() {
@@ -115,13 +118,20 @@ public class Animale {
 		this.peso = peso;
 	}
 	
-	public void attacco(Animale a2) {
+	public void attacco(Animale a1) {
 		
 	}
-	public void attaccoSpeciale(Animale a2)  {
+	public void attaccoSpeciale(Animale a1)  {
 		
 	}
-	public void abilità(Animale a2) {
+	public void abilità(Animale a1) {
 		
+	}
+	public double CalcoloVolume() {
+		return this.altezza*this.lunghezza*this.larghezza;	 
+	}
+
+	public void setVelocità(double velocità) {
+		this.velocità = velocità;
 	}
 }

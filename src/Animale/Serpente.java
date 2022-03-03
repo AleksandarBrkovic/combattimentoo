@@ -1,4 +1,4 @@
-
+package Animale;
 public class Serpente extends Anfibi{
 
 	public Serpente(double vel, double f, int vit, int ene, double att, double dif, double da, int alt, int lung, int larg,
@@ -24,7 +24,7 @@ public class Serpente extends Anfibi{
 		}
 	}
 	
-	public void morsoRapido (Animale a2) {
+	public void morsoRapido () {
 		int x=(int) (Math.random()*(10-5+1)+5);
 		this.attacco+= x;
 	}

@@ -1,3 +1,4 @@
+package Animale;
 
 public class Rapace extends Uccelli {
 
@@ -15,7 +16,7 @@ public class Rapace extends Uccelli {
 				pe=  (Math.random()*(1.25-8.5+1)+8.5));
 		// TODO Auto-generated constructor stub
 	}
-	public void abilità(Animale a2 ) { //picchiata
+	public void abilità(Animale a1 ) { //picchiata
 		int x=(int) (Math.random()*(10-5+1)+5); //danni ++
 		int y=(int) (Math.random()*(10-5+1)+5); //energia-- 
 		this.danni+=x;
@@ -24,7 +25,7 @@ public class Rapace extends Uccelli {
 	}
 	public void Volare() {
 		int x=(int) (Math.random()*(10-5+1)+5);
-		this.velocità+=x;
+		this.setVelocità(this.getVelocità() + x);
 	}
 
 }

@@ -1,3 +1,4 @@
+package Animale;
 
 public class Leone extends Predatori {
 
@@ -17,16 +18,16 @@ public class Leone extends Predatori {
 		
 		// TODO Auto-generated constructor stub
 	}
-	public void abilità(Animale a2 ) { // agguato
+	public void abilità(Animale a1 ) { // agguato
 		
 		this.danni++;
-		attaccoSpeciale(a2);
-		attaccoSpeciale(a2); 
+		attaccoSpeciale(a1);
+		attaccoSpeciale(a1); 
 		
 	}
 	public void agilità() {
 		int x=(int) (Math.random()*(10-5+1)+5);
-		this.velocità+=x;
+		this.setVelocità(this.getVelocità() + x);
 	}
 
 }
