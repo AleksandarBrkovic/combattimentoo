@@ -29,6 +29,22 @@ public class Animale {
 		this.larghezza = larghezza;
 		this.peso = peso;
 	}
+	public void stampaStats() {
+		System.out.println("Sono un "+ this.getClass().getSimpleName());
+		
+		System.out.println("Velocità: "+this.velocità);
+		System.out.println("Forza: "+this.forza);
+		System.out.println("Vita: "+this.vita);
+		System.out.println("Energia: "+this.energia);
+		System.out.println("Attacco: "+this.attacco);
+		System.out.println("Difesa: "+this.difesa);
+		System.out.println("Danni: "+this.danni);
+		System.out.println("Altezza: "+this.altezza);
+		System.out.println("Lunghezza: "+this.lunghezza);
+		System.out.println("Larghezza: "+this.larghezza);
+		System.out.println("Peso: "+this.peso);
+		
+	}
 
 	public double getVelocità() {
 		return velocità;
@@ -126,12 +142,14 @@ public class Animale {
 	}
 	public void abilità(Animale a1) {
 		
+	}	
+	public void setVelocità(double velocità) {
+		this.velocità = velocità;
 	}
 	public double CalcoloVolume() {
 		return this.altezza*this.lunghezza*this.larghezza;	 
 	}
+	
+	
 
-	public void setVelocità(double velocità) {
-		this.velocità = velocità;
-	}
 }

@@ -1,19 +1,18 @@
 package Animale;
 public class Serpente extends Anfibi{
 
-	public Serpente(double vel, double f, int vit, int ene, double att, double dif, double da, int alt, int lung, int larg,
-			double pe) {
-		super(vel= 13.75,
-				f= 42.1875, 
-				vit= 100, 
-				ene= 100, 
-				att= 42.1875, 
-				dif= 42.1875, 
-				da= 42.1875, 
-				alt= 20,
-				lung= (int) (Math.random()*(300-250+1)+250), 
-				larg= 30, 
-				pe=  (Math.random()*(15-10+1)+10));
+	public Serpente() {
+		super( 13.75,
+				 42.1875, 
+				 100, 
+				 100, 
+				 42.1875, 
+				 42.1875, 
+				 42.1875, 
+				 20,
+				 (int) (Math.random()*(300-250+1)+250), 
+				 30, 
+				  (Math.random()*(15-10+1)+10));
 	}
 	public void abilità(Animale a2) {//veleno
 		int x=(int) (Math.random()*(10-5+1)+5);

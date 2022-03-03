@@ -9,8 +9,8 @@ public class Foresta extends Terreno {
 	}
 	public void bonusTerreno(Animale a1) {
 		
-		if(a1.CalcoloVolume()>=2) {
-			int y=(int) (Math.random()*(20-5+1)+5);
+		if(a1.CalcoloVolume()>=2 || a1.getPeso()>=250) {
+			int y=(int) (Math.random()*(20-10+1)+10);
 		    a1.setVelocità(a1.getVelocità() - y);
 			
 			
@@ -18,6 +18,7 @@ public class Foresta extends Terreno {
 			int y=(int) (Math.random()*(10-5+1)+5);
 			a1.setVelocità(a1.getVelocità() + y);
 		}
+		
 		
 		
 	}

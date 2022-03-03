@@ -2,18 +2,18 @@ package Animale;
 
 public class Rapace extends Uccelli {
 
-	public Rapace(double vel, double f, int vit, int ene, double att, double dif, double da, int alt, int lung, int larg, double pe) {
-		super(vel= 62.5,
-				f= 31.64, 
-				vit= 100, 
-				ene= 100, 
-				att= 31.64, 
-				dif= 100, 
-				da= 31.64, 
-				alt= 50,
-				lung= (int) (Math.random()*(58-34+1)+34), 
-				larg= (int) (Math.random()*(120-80+1)+80), 
-				pe=  (Math.random()*(1.25-8.5+1)+8.5));
+	public Rapace() {
+		super( 62.5,
+				31.64, 
+				100, 
+				100, 
+				31.64, 
+				100, 
+				31.64, 
+				50,
+				(int) (Math.random()*(58-34+1)+34), 
+				(int) (Math.random()*(120-80+1)+80), 
+				(Math.random()*(1.25-8.5+1)+8.5));
 		// TODO Auto-generated constructor stub
 	}
 	public void abilità(Animale a1 ) { //picchiata
