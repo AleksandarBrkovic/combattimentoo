@@ -2,8 +2,8 @@ package Terreno;
 import Animale.Animale;
 
 public class Foresta extends Terreno {
-	public Foresta (String tdt) {
-		super(tdt= "SEI NELLA FORESTA");
+	public Foresta () {
+		super( "SEI NELLA FORESTA");
 		
 		
 	}

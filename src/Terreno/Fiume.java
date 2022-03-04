@@ -2,10 +2,12 @@ package Terreno;
 import Animale.*;
 
 public class Fiume extends Terreno {
-	public Fiume(String tdt) {
-		super(tdt= "SEI IN UN FIUME");
+	public Fiume( ) {
+		super("SEI IN UN FIUME");
 		
 	}
+	
+	
 public void bonusTerreno( Animale a1) {
 		if(a1 instanceof Anfibi) {	//verifica di che tipo è l'oggetto
 			System.out.println("VANTAGGIO IN ACQUA");

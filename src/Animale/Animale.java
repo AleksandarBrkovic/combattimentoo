@@ -17,7 +17,7 @@ public class Animale {
 	public Animale(double velocità, double forza, int vita, int energia, double attacco, double difesa, double danni,
 			int altezza, int lunghezza, int larghezza, double peso) {
 		super();
-		this.setVelocità(velocità);
+		this.velocità= velocità;
 		this.forza = forza;
 		this.vita = vita;
 		this.energia = energia;
@@ -29,6 +29,12 @@ public class Animale {
 		this.larghezza = larghezza;
 		this.peso = peso;
 	}
+	public Animale() {
+		
+		
+	}
+
+	
 	public void stampaStats() {
 		System.out.println("Sono un "+ this.getClass().getSimpleName());
 		
@@ -45,6 +51,48 @@ public class Animale {
 		System.out.println("Peso: "+this.peso);
 		
 	}
+	public Animale RandomAnimale() {
+		
+		int z= (int) (Math.random()*6+1);
+		switch(z) { // random per decidere che animale spawnare
+		case 1: 
+			return new Struzzo();
+			
+		case 2: 
+			return new Leone();
+			
+		case 3: 
+			return new Orso();
+			
+		case 4: 
+			return new Rapace();
+			
+		case 5: 
+		return new Coccodrillo();
+			
+		case 6: 
+		return new Serpente();
+			
+			default:
+				return null;
+		}
+		
+	}
+
+	public void setForza(double forza) {
+		this.forza = forza;
+	}
+
+
+	public void setDifesa(double difesa) {
+		this.difesa = difesa;
+	}
+
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
 
 	public double getVelocità() {
 		return velocità;
@@ -149,6 +197,7 @@ public class Animale {
 	public double CalcoloVolume() {
 		return this.altezza*this.lunghezza*this.larghezza;	 
 	}
+	
 	
 	
 
