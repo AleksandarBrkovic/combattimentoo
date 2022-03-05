@@ -10,27 +10,31 @@ public class Combattimento {
 		int sceltaChiAttacca=0;
 		Discorso d1= new Discorso();
 		d1.StampaDiscorso();
-		a1.RandomAnimale(); //spawna animale random
-		a2.RandomAnimale(); //spawna animale random
-		t1.RandomTerreno(); // spawna terreno random
 		t1.stampaTerreno();
+		System.out.println();
 		System.out.println("NARRATORE: Ecco le statistiche dei nostri combattenti e dove combatteranno");
+		System.out.println("------------------------------------------------------");
 		a1.stampaStats();
+		System.out.println("------------------------------------------------------");
 		a2.stampaStats();
 		sceltaChiAttacca=(int) (Math.random()*1);
+		int win=0;
 		
-		/*do {
-			turno++;
+		do{
+			
 			System.out.println("siamo al turno: "+ turno);
 			if(sceltaChiAttacca==0) {
-				System.out.println("è il turno del");
+				System.out.println("è il turno del " + a1.getClass().getSimpleName());
+				
+			}else {
+				System.out.println("è il turno del " + a2.getClass().getSimpleName());
 			}
 			
 			
 			
 			
 			
-		}while(a1.getVita()>0||a2.getVita()>0);*/
+		}while(win!=1);
 		
 	}
 	

@@ -17,4 +17,8 @@ public void bonusTerreno( Animale a1) {
 		}
 	
 	}
+public void stampaTerreno() {
+	System.out.print("Luogo del combattimento: "+ this.getClass().getSimpleName());
+	
+	}
 }

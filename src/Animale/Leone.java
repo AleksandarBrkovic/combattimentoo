@@ -13,11 +13,11 @@ public class Leone extends Predatori {
 				140,
 				350, 
 				80, 
-				(Math.random()*(300-272+1)+272));
+				 (float)(Math.random()*(300-272+1)+272));
 		
-		// TODO Auto-generated constructor stub
+		agilità();
 	}
-	public void abilità(Animale a1 ) { // agguato
+	public void attacco(Animale a1 ) { // agguato
 		
 		this.danni++;
 		attaccoSpeciale(a1);

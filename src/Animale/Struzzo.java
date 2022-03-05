@@ -14,6 +14,7 @@ public class Struzzo extends Uccelli {
 				180, 
 				200, 
 				(int) (Math.random()*(160-120+1)+120));
+		TestaSottoLaSabbia();
 	}
 
 	public void TestaSottoLaSabbia() {

@@ -1,6 +1,6 @@
 package Animale;
 
-public class Animale {
+public abstract class Animale {
 	private double velocità;
 	protected double forza;
 	protected int vita;
@@ -11,11 +11,11 @@ public class Animale {
 	protected int altezza;
 	protected int lunghezza;
 	protected int larghezza;
-	protected double peso;
+	protected float peso;
 
 	
 	public Animale(double velocità, double forza, int vita, int energia, double attacco, double difesa, double danni,
-			int altezza, int lunghezza, int larghezza, double peso) {
+			int altezza, int lunghezza, int larghezza, float peso) {
 		super();
 		this.velocità= velocità;
 		this.forza = forza;
@@ -51,33 +51,7 @@ public class Animale {
 		System.out.println("Peso: "+this.peso);
 		
 	}
-	public Animale RandomAnimale() {
-		
-		int z= (int) (Math.random()*6+1);
-		switch(z) { // random per decidere che animale spawnare
-		case 1: 
-			return new Struzzo();
-			
-		case 2: 
-			return new Leone();
-			
-		case 3: 
-			return new Orso();
-			
-		case 4: 
-			return new Rapace();
-			
-		case 5: 
-		return new Coccodrillo();
-			
-		case 6: 
-		return new Serpente();
-			
-			default:
-				return null;
-		}
-		
-	}
+
 
 	public void setForza(double forza) {
 		this.forza = forza;
@@ -89,7 +63,7 @@ public class Animale {
 	}
 
 
-	public void setPeso(double peso) {
+	public void setPeso(float peso) {
 		this.peso = peso;
 	}
 
@@ -183,14 +157,21 @@ public class Animale {
 	}
 	
 	public void attacco(Animale a1) {
-		
+		int x;
+		x=(int) (Math.random()*20+1);
+		if(this.energia>0) {
+			System.out.println(this.getClass().getSimpleName() + "POSSO ATTACCARE!!");
+			this.energia-=1;
+			if(this.attacco + this.velocità + this.forza + x>a1.difesa + a1.velocità) {
+				
+				System.out.println("L'attacco di " + this.getClass().getSimpleName() + " fa " + a1.vita );
+			}
+		}		
 	}
 	public void attaccoSpeciale(Animale a1)  {
 		
 	}
-	public void abilità(Animale a1) {
-		
-	}	
+	
 	public void setVelocità(double velocità) {
 		this.velocità = velocità;
 	}

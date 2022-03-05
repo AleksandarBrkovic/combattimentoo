@@ -4,15 +4,15 @@ import Terreno.*;
 
 public class Main {
 public Main() {
-	Animale a1= new Animale();
-	 a1=a1.RandomAnimale();
+	Animale a1 = Tools.RandomAnimale();
 	
-	
-	Animale a2= new Animale();
-	a2= a2.RandomAnimale();
-	System.out.println(a1.getClass().getSimpleName());
+	Animale a2 = Tools.RandomAnimale();
 
-	Terreno t1= new Terreno();
+	Terreno t1 = Tools.RandomTerreno();
+	
+	
+	
+	System.out.println(t1.getClass().getSimpleName());
 	Combattimento.Combattimento( a1,  a2,  t1);
 	
 }
@@ -25,8 +25,7 @@ public Main() {
 		}
 		
 	
-		
-
+	
 	
 
 }

@@ -13,15 +13,15 @@ public class Rapace extends Uccelli {
 				50,
 				(int) (Math.random()*(58-34+1)+34), 
 				(int) (Math.random()*(120-80+1)+80), 
-				(Math.random()*(1.25-8.5+1)+8.5));
-		// TODO Auto-generated constructor stub
+				 (float)(Math.random()*(1.25-8.5+1)+8.5));
+		Volare();
 	}
-	public void abilità(Animale a1 ) { //picchiata
+	public void attaccoSpeciale(Animale a1 ) { //picchiata
 		int x=(int) (Math.random()*(10-5+1)+5); //danni ++
 		int y=(int) (Math.random()*(10-5+1)+5); //energia-- 
 		this.danni+=x;
 		this.energia-=y;
-		//a2.vita -= danni;
+	
 	}
 	public void Volare() {
 		int x=(int) (Math.random()*(10-5+1)+5);
