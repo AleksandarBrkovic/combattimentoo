@@ -156,19 +156,22 @@ public abstract class Animale {
 		this.peso = peso;
 	}
 	
-	public void attacco(Animale a1) {
-		int x;
-		x=(int) (Math.random()*20+1);
+	public void attacco(Animale a2) {
+		int d20;
+		d20=(int) (Math.random()*20+1);
 		if(this.energia>0) {
-			System.out.println(this.getClass().getSimpleName() + "POSSO ATTACCARE!!");
+			System.out.println(this.getClass().getSimpleName() + "HO ABBASTANZA ENERGIA PER ATTACCARTI");
 			this.energia-=1;
-			if(this.attacco + this.velocità + this.forza + x>a1.difesa + a1.velocità) {
+			if(this.attacco + this.velocità + this.forza + d20>a2.difesa + a2.velocità) {
+				a2.setVita((int) (a2.getVita()-(this.danni+this.forza))); //attacco
 				
-				System.out.println("L'attacco di " + this.getClass().getSimpleName() + " fa " + a1.vita );
 			}
 		}		
 	}
-	public void attaccoSpeciale(Animale a1)  {
+	public void attaccoSpeciale()  {
+		
+	}
+	public void attaccoSuper(Animale a1, Animale a2) {
 		
 	}
 	
@@ -179,7 +182,7 @@ public abstract class Animale {
 		return this.altezza*this.lunghezza*this.larghezza;	 
 	}
 	
-	
+
 	
 
 }

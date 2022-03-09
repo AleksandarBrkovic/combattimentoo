@@ -15,12 +15,12 @@ public class Serpente extends Anfibi{
 				 (float) (Math.random()*(15-10+1)+10));
 		morsoRapido();
 	}
-	public void attaccoSpeciale(Animale a2) {//veleno
+	public void attaccoSuper() {//veleno
 		int x=(int) (Math.random()*(10-5+1)+5);
 		this.danni+= x;
 		int prob= (int) Math.random()*100+1;
 		if(prob<=5) {
-			a2.vita=0; // KO istantaneo
+			 // KO istantaneo
 		}
 	}
 	

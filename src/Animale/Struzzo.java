@@ -14,10 +14,10 @@ public class Struzzo extends Uccelli {
 				180, 
 				200, 
 				(int) (Math.random()*(160-120+1)+120));
-		TestaSottoLaSabbia();
+		
 	}
 
-	public void TestaSottoLaSabbia() {
+public void attaccoSuper() {
 		this.difesa+= (int) (Math.random()*(10-5+1)+5);
 		int prob=0;
 		prob=(int) (Math.random()*1);

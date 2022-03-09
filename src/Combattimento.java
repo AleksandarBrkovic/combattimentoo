@@ -30,8 +30,8 @@ public class Combattimento {
 				System.out.println("è il turno del " + a2.getClass().getSimpleName());
 			}
 			
-			
-			
+		
+			win=1;
 			
 			
 		}while(win!=1);

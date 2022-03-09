@@ -7,7 +7,7 @@ public abstract class Anfibi extends Animale {
 		super(vel, f, vit, ene, att, dif, da, alt, lung, larg, pe);
 		// TODO Auto-generated constructor stub
 	}
-	public void attacco(Animale a1 ) { //Vantaggio in acqua
+	public void attaccoSpeciale() { //Vantaggio in acqua
 		
 		
 	}

@@ -17,11 +17,11 @@ public class Leone extends Predatori {
 		
 		agilità();
 	}
-	public void attacco(Animale a1 ) { // agguato
+	public void attaccoSuper( ) { // agguato
 		
 		this.danni++;
-		attaccoSpeciale(a1);
-		attaccoSpeciale(a1); 
+		attaccoSpeciale();
+		attaccoSpeciale(); 
 		
 	}
 	public void agilità() {

@@ -27,5 +27,6 @@ public class Orso extends Predatori {
 		this.forza+=x;
 		
 	}
+	
 
 }

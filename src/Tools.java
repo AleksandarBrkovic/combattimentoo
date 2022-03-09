@@ -1,14 +1,5 @@
-import Animale.Animale;
-import Animale.Coccodrillo;
-import Animale.Leone;
-import Animale.Orso;
-import Animale.Rapace;
-import Animale.Serpente;
-import Animale.Struzzo;
-import Terreno.Fiume;
-import Terreno.Foresta;
-import Terreno.Pianura;
-import Terreno.Terreno;
+import Animale.*;
+import Terreno.*;
 
 public class Tools {
 public static Animale RandomAnimale() {
@@ -28,17 +19,17 @@ public static Animale RandomAnimale() {
 			return new Rapace();
 			
 		case 5: 
-		return new Coccodrillo();
+			return new Coccodrillo();
 			
 		case 6: 
-		return new Serpente();
+			return new Serpente();
 			
 			default:
 				return null;
 		}
 		
 	}	
-	public static Terreno RandomTerreno() {
+	public static Terreno RandomTerreno() { //random terreno
 		
 		int z= (int) (Math.random()*3+1);
 		switch(z){

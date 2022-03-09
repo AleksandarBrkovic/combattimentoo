@@ -16,11 +16,12 @@ public class Rapace extends Uccelli {
 				 (float)(Math.random()*(1.25-8.5+1)+8.5));
 		Volare();
 	}
-	public void attaccoSpeciale(Animale a1 ) { //picchiata
+	public void attaccoSuper(Animale a2) { //picchiata
 		int x=(int) (Math.random()*(10-5+1)+5); //danni ++
 		int y=(int) (Math.random()*(10-5+1)+5); //energia-- 
 		this.danni+=x;
 		this.energia-=y;
+		a2.vita-= 
 	
 	}
 	public void Volare() {
