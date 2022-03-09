@@ -7,11 +7,17 @@ public abstract class Predatori extends Animale {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void attaccoSpeciale() { //graffio
-		System.out.println("GRAFFIALO ZIO PORCO SIUM");
-		int x=(int) (Math.random()*(10-5+1)+5);
-		this.danni+= x;
-		this.energia-=1;
+	public void attaccoSpeciale(Animale a2) { //graffio
+		if(isAttacco(a2)) {
+			System.out.println("GRAFFIALO ZIO PORCO SIUM");
+			this.bonusDanni=(int) (Math.random()*(10-5+1)+5);
+			this.danni+= this.bonusDanni;
+			this.energia-=1;
+			System.out.println("VITA AVVERSARIO: " + a2.vita);
+		}else {
+			System.out.println("ZIO PORCO L'HAI MANCATO");
+			System.out.println("VITA AVVERSARIO: " + a2.vita);
+		}
 		
 	}
 	

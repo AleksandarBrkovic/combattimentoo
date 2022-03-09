@@ -1,7 +1,7 @@
 package Animale;
 
 public abstract class Animale {
-	private double velocità;
+	protected double velocità;
 	protected double forza;
 	protected int vita;
 	protected int energia;
@@ -10,8 +10,14 @@ public abstract class Animale {
 	protected double danni;
 	protected int altezza;
 	protected int lunghezza;
+	protected int bonusVelocità;
+	protected int bonusDanni;
+	protected int bonusDifesa;
+	protected int bonusForza;
+	protected int bonusAttacco;
 	protected int larghezza;
 	protected float peso;
+	protected boolean isPresaInMorso;
 
 	
 	public Animale(double velocità, double forza, int vita, int energia, double attacco, double difesa, double danni,
@@ -28,6 +34,7 @@ public abstract class Animale {
 		this.lunghezza = lunghezza;
 		this.larghezza = larghezza;
 		this.peso = peso;
+		this.isPresaInMorso= false;
 	}
 	public Animale() {
 		
@@ -50,6 +57,36 @@ public abstract class Animale {
 		System.out.println("Larghezza: "+this.larghezza);
 		System.out.println("Peso: "+this.peso);
 		
+	}
+	public void attacco(Animale a2) {
+		int d20;
+		d20=(int) (Math.random()*20+1);
+		if(this.energia>0) {
+			System.out.println(this.getClass().getSimpleName() + " UTILIZZA IL SUO ATTACCO BASE ");
+			this.energia-=1;
+			if((this.attacco+this.bonusVelocità) + this.velocità + this.forza + d20>a2.difesa + a2.velocità) {
+				a2.setVita((int) (a2.getVita()-(this.danni+this.forza))); //attacco
+				System.out.println("VITA AVVERSARIO: " + a2.vita);
+			}else {
+				System.out.println("GIOPPINO LO HAI MANCATO");
+				System.out.println("VITA AVVERSARIO: " + a2.vita);
+			}
+		}		
+	}
+	public void attaccoSpeciale(Animale a1)  {
+		
+	}
+	public void attaccoSuper(Animale a1 ) {
+		
+	}
+	public boolean isAttacco(Animale a1) {
+		
+		if(this.attacco + this.velocità + this.forza + (int) (Math.random()*20+1)>a1.difesa + a1.velocità) {
+			a1.vita-=this.danni+this.forza;
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 
@@ -156,31 +193,51 @@ public abstract class Animale {
 		this.peso = peso;
 	}
 	
-	public void attacco(Animale a2) {
-		int d20;
-		d20=(int) (Math.random()*20+1);
-		if(this.energia>0) {
-			System.out.println(this.getClass().getSimpleName() + "HO ABBASTANZA ENERGIA PER ATTACCARTI");
-			this.energia-=1;
-			if(this.attacco + this.velocità + this.forza + d20>a2.difesa + a2.velocità) {
-				a2.setVita((int) (a2.getVita()-(this.danni+this.forza))); //attacco
-				
-			}
-		}		
+	public boolean isPresaInMorso() {
+		return isPresaInMorso;
 	}
-	public void attaccoSpeciale()  {
-		
-	}
-	public void attaccoSuper(Animale a1, Animale a2) {
-		
+	public void setPresaInMorso(boolean isPresaInMorso) {
+		this.isPresaInMorso = isPresaInMorso;
 	}
 	
+
 	public void setVelocità(double velocità) {
 		this.velocità = velocità;
 	}
 	public double CalcoloVolume() {
 		return this.altezza*this.lunghezza*this.larghezza;	 
 	}
+	public int getBonusVelocità() {
+		return bonusVelocità;
+	}
+	public void setBonusVelocità(int bonusVelocità) {
+		this.bonusVelocità = bonusVelocità;
+	}
+	public int getBonusDanni() {
+		return bonusDanni;
+	}
+	public void setBonusDanni(int bonusDanni) {
+		this.bonusDanni = bonusDanni;
+	}
+	public int getBonusDifesa() {
+		return bonusDifesa;
+	}
+	public void setBonusDifesa(int bonusDifesa) {
+		this.bonusDifesa = bonusDifesa;
+	}
+	public int getBonusForza() {
+		return bonusForza;
+	}
+	public void setBonusForza(int bonusForza) {
+		this.bonusForza = bonusForza;
+	}
+	public int getBonusAttacco() {
+		return bonusAttacco;
+	}
+	public void setBonusAttacco(int bonusAttacco) {
+		this.bonusAttacco = bonusAttacco;
+	}
+	
 	
 
 	

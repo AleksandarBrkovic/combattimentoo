@@ -5,7 +5,7 @@ public class Rapace extends Uccelli {
 	public Rapace() {
 		super( 62.5,
 				31.64, 
-				100, 
+				1000, 
 				100, 
 				31.64, 
 				100, 
@@ -17,16 +17,24 @@ public class Rapace extends Uccelli {
 		Volare();
 	}
 	public void attaccoSuper(Animale a2) { //picchiata
-		int x=(int) (Math.random()*(10-5+1)+5); //danni ++
-		int y=(int) (Math.random()*(10-5+1)+5); //energia-- 
-		this.danni+=x;
-		this.energia-=y;
-		a2.vita-= 
+		
+		if(isAttacco(a2)) {
+			System.out.println("IL RAPACE SCENDE IN PICCHIATAAAAAAAAA");
+			this.bonusDanni=(int) (Math.random()*(10-5+1)+5); //danni ++
+			int y=(int) (Math.random()*(10-5+1)+5); //energia-- 
+			this.danni+=this.bonusDanni;
+			this.energia-=y;
+			System.out.println("VITA AVVERSARIO: " + a2.vita);
+		}else {
+			System.out.println("CONFONDENDOSI NON HA EFFETUATO LA PICCHIATA");
+			System.out.println("VITA AVVERSARIO: " + a2.vita);
+		}
+		
 	
 	}
 	public void Volare() {
-		int x=(int) (Math.random()*(10-5+1)+5);
-		this.setVelocità(this.getVelocità() + x);
+		this.bonusVelocità=(int) (Math.random()*(10-5+1)+5);
+		this.velocità+= this.bonusVelocità;
 	}
 
 }

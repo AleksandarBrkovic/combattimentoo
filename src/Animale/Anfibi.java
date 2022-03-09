@@ -8,7 +8,7 @@ public abstract class Anfibi extends Animale {
 		// TODO Auto-generated constructor stub
 	}
 	public void attaccoSpeciale() { //Vantaggio in acqua
-		
+		System.out.println(""); //chidere al profe;
 		
 	}
 	

@@ -5,7 +5,7 @@ public class Orso extends Predatori {
 	public Orso() {
 		super( 70,
 				75.0, 
-				 100, 
+				 1000, 
 				 100, 
 				 75.0, 
 				 56.25, 
@@ -18,13 +18,13 @@ public class Orso extends Predatori {
 		possanza();
 	}
 	public void pellicciaSpessa() {
-		int x=(int) (Math.random()*(10-5+1)+5);
-		this.difesa+=x;
+		this.bonusDifesa=(int) (Math.random()*(10-5+1)+5);
+		this.difesa+=this.bonusDifesa;
 		
 	}
 	public void possanza() {
-		int x=(int) (Math.random()*(10-5+1)+5);
-		this.forza+=x;
+		this.bonusForza=(int) (Math.random()*(10-5+1)+5);
+		this.forza+=this.bonusForza;
 		
 	}
 	
